@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int SumOfElements(int a[],int size){
+    int i,sum = 0;
+    for(i=0;i<size;i++){
+        sum = sum+a[i];
+    }
+    return sum;
+}
+
+int main()
+{
+    int a[] = {1,3,5,7,9},size,sum;
+    size = sizeof(a)/sizeof(a[0]);
+    printf("%d\n",size);
+    sum = SumOfElements(a,size);
+    printf("%d",sum);
+    return 0;
+}
